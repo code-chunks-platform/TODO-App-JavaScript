@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-color: #2A2438;
+}
+
+body, .todo-container, h1, .input_field {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1, .input_field, li .tasks {
+    width: 400px;
+    height: 60px;
+    border-radius: 3px;
+    background-color: #352F44;
+}
+
+.todo-container {
+    flex-direction: column;
+}
+
+h1 {
+    letter-spacing: 2px;
+    padding: 30px 0;
+    color: #DBD8E3;
+    font-family: 'Roboto', sans-serif;
+}
+
+.input_field {
+    margin-top: 10px;
+    padding: 10px;
+}
+
+.input_field #input_search {
+    width: 400px;
+    outline: none;
+    border: none;
+    color: #DBD8E3;
+    padding: 8px 10px;
+    margin-right: 10px;
+    letter-spacing: 1px;
+    background: transparent;
+    border-bottom: 2px solid #DBD8E3;
+    font-family: 'Poppins', sans-serif;
+}
+
+::placeholder {
+    color: #dbd8e37e;
+    font-family: 'Poppins', sans-serif;
+}
+
+.btn-all {
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 3px;
+    color: #DBD8E3;
+    background-color: #5C5470;
+    cursor: pointer;
+    letter-spacing: 1.5px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.todo_tasks ul li {
+    list-style: none;
+}
+
+li .tasks {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+    color: #DBD8E3;
+    font-family: 'Poppins', sans-serif;
+}
+
+.check_list {
+    display: flex;
+    align-items: center;
+}
+
+.check_list i {
+    cursor: pointer;
+}
+
+.check_list p {
+    margin-left: 10px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.edit {
+    background-color: #1437fd;
+} 
+
+.delete {
+    background-color: #ff0b38;
+}
